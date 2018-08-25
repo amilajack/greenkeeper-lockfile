@@ -2,6 +2,8 @@
 
 const env = process.env
 
+console.log(env, env.APPVEYOR)
+
 module.exports = {
   buildkite: () => env.BUILDKITE === 'true',
   circleci: () => env.CIRCLECI === 'true',
